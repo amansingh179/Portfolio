@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1215px;
+    background: url(../Image/bgimage.jpg);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.container{
+    width: 85rem;
+    margin: 0 auto;  
+    background-color: aquamarine;
+    border-radius: 50px;
+    
+}
+.burger{
+    position: absolute;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 4px;
+}
+
+.navbar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+    
+.logo{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38px;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+.logo p{
+    font-size: 18px;
+}
+.links ul{
+ display: flex;
+}
+.links ul li{
+    border-radius: 10px;
+    list-style: none;
+    padding: 4px 6px;
+    margin: 0 70px;
+}
+.links ul li a{
+    background-color:white;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.links a:hover{
+    background-color: #f53d77;
+    line-height: 10px;
+}
+
+/* Section about me */
+
+.about{
+    background-color: lightblue;
+    width: 70rem;
+    margin: 40px auto;
+    border-radius: 80px 0 80px 0;
+
+}
+.aboutme{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.animationtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}    
+.hellopart{
+    text-align: center;
+    font-weight: 600;
+    color: #FC6D6D;
+    font-family: 'Gideon Roman', cursive;
+}
+
+.hellopart p:nth-child(1){
+    font-size: 60px;
+}
+.hellopart p:nth-child(2){
+    font-size: 70px;
+}
+.photo{
+    display: inline-flex;
+}
+.photo img{
+    height: 500px;
+    border-radius: 40px;
+    box-shadow: 9px 9px 12px 0px;;
+}
+
+.wrapper{
+    font-family: 'Roboto', sans-serif;
+    display: inline-flex;
+}
+.wrapper .static-text{
+    margin-top: 5px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-texts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-texts li{
+    list-style: none;
+    color: #FC6D6D;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-texts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 80px;
+  }
+  .dynamic-texts li span::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: lightblue;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(19) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+/* Section of more about me */
+#moreabout{
+    color: rgb(102, 26, 26);
+    background-color: lightblue;
+    width: 70rem;
+    margin: 40px auto;
+    border-radius: 80px 0 80px 0;
+    
+
+} 
+.moreaboutme{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    width: 50rem;
+    margin: 40px auto;
+    padding: 30px 0 30px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.moreaboutme h1{
+    font-size: 40px;
+    padding: 8px 0 8px 0;
+}
+.moreaboutme p{
+    font-weight: 800;   
+    font-size: 20px;
+    color: #e85008;
+}
+#para1{
+    font-weight: 500;
+    font-style: oblique;
+    font-family: 'Gideon Roman', cursive;
+}
+/* account */
+
+#accounts{
+    width: 70rem;
+    height: 10rem;
+    background-color: lightblue;
+    border-radius: 80px 80px 0px 0px;
+    margin: 0 auto;
+}
+.social{
+	display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+.social p{
+    color: rgb(230, 59, 59);
+    font-size: 30px;
+    font-family: 'Gideon Roman', cursive;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center; 
+	background:  #3c1ee0;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+} 
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+footer{
+    border-radius: 0px 0 80px 80px;
+    margin: 0 auto;
+    width: 70rem;
+    background-color: rgb(218, 60, 60);
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 8px 0px;
+}
+
+
+@media screen and (max-width: 1170px){
+    body::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background: url(../Image/bgimage.jpg);
+        opacity: 0.8;
+        z-index: -1;
+        height: 1650px;
+    }
+    .hellopart p:nth-child(1) {
+        font-size: 45px;
+    }
+    .hellopart p:nth-child(2) {
+        font-size: 55px;
+    }
+    .wrapper .static-text{
+        font-size: 26px;
+        padding: 35px 0px 0px 30px;
+    }
+    .dynamic-texts li span{
+        line-height: 26px;
+        font-size: 26px;
+    }
+    .container{
+        width: 22rem;
+    } 
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        transition: all 0.5s ;
+    }
+    .logo{
+        justify-content: center;
+    }
+    .links ul{
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .links ul li{
+        margin-top: 10px;
+        text-align: center;
+        
+    }
+    .links ul li a{
+        font-size: 15px;
+    }
+    
+    .burger{
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 15%;
+       
+    }
+    .h-class{
+        height: 80px;
+    }
+    .v_class {
+        visibility:hidden;     
+    }
+    .about{
+        width: 22rem;
+    }
+    .aboutme{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hellopart{
+        font-size: 10px;
+        
+    }
+    .photo img{
+        height: 270px;
+        width: 200px;
+    }
+    .photo{
+        padding-bottom: 10px;
+    }
+    #moreabout{
+        width: 20rem;
+        display: flex;
+        
+    }
+    .moreaboutme{
+        display: flex;
+        padding: 0 10px 0 10px;
+        flex-direction: column;
+        font-size: 0.5rem;
+    }
+    #accounts{
+        width: 22rem;
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    #accounts p{
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+    .footer{
+        width: 22rem;
+        
+    }
+    
+}

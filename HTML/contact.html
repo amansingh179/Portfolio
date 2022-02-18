@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/contactstyle.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <section class="form">
+        <form action="/contact", method="post">
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            <div class="select">
+                <label for="Gender">Gender </label>
+                <select name="Gender" id="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <textarea name="Textarea" id="textarea" cols="30" rows="10"placeholder="How i can help u?"></textarea>
+            <div class="buttons">
+                <button type="submit"class="btn">Submit</button>
+                <button type="reset"class="btn">Clear</button>
+            </div>
+        </form>
+    </section>
+    <footer class="footer"> Created by Aman. &copy 2022</footer>
+</body>
+</html>
